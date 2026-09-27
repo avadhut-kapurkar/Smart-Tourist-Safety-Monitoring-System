@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI SYSTEM"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnGemini"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="OPEN GEMINI AI"
+        android:textAllCaps="false"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

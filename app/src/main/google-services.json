@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "570869329012",
+    "project_id": "touristapp-2784d",
+    "storage_bucket": "touristapp-2784d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570869329012:android:6310f8fce61a78ab573521",
+        "android_client_info": {
+          "package_name": "com.example.touristapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLs0mMMalt9tKr3NT3gbPzj1VUP7zMcgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

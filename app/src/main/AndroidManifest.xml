@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tourist_app_logo"
+        android:roundIcon="@mipmap/tourist_app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TouristApp">
+
+        <!-- Main Launcher -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth Screens -->
+        <activity android:name=".LoginActivity" android:exported="true" />
+        <activity android:name=".SignupActivity" android:exported="true" />
+
+        <!-- Dashboard -->
+        <activity android:name=".DashboardActivity" android:exported="true" />
+
+        <!-- Features -->
+        <activity android:name=".MapsActivity" android:exported="true" />
+        <activity android:name=".FIRActivity" android:exported="true" />
+        <activity android:name=".WearableAndContactsActivity" android:exported="true" />
+        <activity android:name=".AISystemActivity" android:exported="true" />
+
+        <!-- 🔥 FIXED PROFILE ACTIVITY -->
+        <activity android:name=".ProfileActivity" android:exported="true" />
+
+        <!-- OLD (optional - keep only if using) -->
+        <!-- <activity android:name=".UserProfileActivity" android:exported="true" /> -->
+        <!-- <activity android:name=".ProfileDetailsActivity" android:exported="true" /> -->
+
+        <!-- GeoFence Receiver -->
+        <receiver android:name=".GeoFenceBroadcastReceiver" android:exported="false"/>
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCwzyYx_4CYA-XS8tuR0Qz18PFSTuFqLA" />
+
+    </application>
+
+</manifest>
